@@ -1,0 +1,192 @@
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based on: https://github.com/sb2nov/resume
+% License: MIT
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Font Options
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% Page Setup
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\Large\bfseries\underline
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is Machine Readable
+\pdfgentounicode=1
+
+% Custom Commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{flushleft}
+    {\Huge \textbf{Pritu Yadav}} \\ \vspace{8pt}
+    \small +917985913336 $|$ Hyderabad, Telangana $|$ \href{mailto:erprituyadav@gmail.com}{\underline{erprituyadav@gmail.com}} $|$ \href{https://github.com/Pritu2022}{\underline{GitHub}} $|$ \href{https://www.linkedin.com/in/pritu-yadav-204872268/}{\underline{LinkedIn}} $|$ \href{https://pritu2022.github.io/}{\underline{Portfolio}} \\
+    \hrulefill \\
+\end{flushleft}
+\vspace{-8pt}
+
+
+\section{Summary}
+\begin{flushleft}   
+Full Stack Developer with expertise in Java, Spring, and Angular. Proven track record in scalable web solutions, adept in both backend development using the Spring framework and frontend technologies like Angular. Committed to delivering high-quality, collaborative software solutions.
+\end{flushleft}
+\vspace{-8pt}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Proficient -> Java, JavaScript; Familiar with -> C++, python.} \\
+     \textbf{Tools/Automation}{: Junit, Maven, Gradle, Intellij, STS} \\
+     \textbf{Web Technologies}{: HTML5, CSS3, JS, SOAP, REST APIs, SpringBoot, Angular.} \\
+      \textbf{Database}{: MySQL, Postgress.} \\
+      \textbf{Others}{: Problem-solving, Data structures and algorithms} \\
+    }}
+ \end{itemize}
+ 
+\vspace{-8pt}
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {7 Dots Smart Solutions}{July 2023 -- Present}
+      {Full Stack Developer}{}
+      \resumeItemListStart
+        \resumeItem{Worked on fronted and backend for developing user-friendly applications and websites with different technologies.}
+        \resumeItem{Created backend using Java, Spring, and Postgres to handle the backend side for both apps and websites.}
+        \resumeItem{Developed front end using Angular framework with TypeScript for websites and applications.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members using HTML, JavaScript, and CSS.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {7 Dots Smart Solutions}{Jan 2023 -- June 2023}
+      {Backend Software Developer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Assisted in the development of the backend for different websites as well as mobile applications for iOS/Android using Java and the Spring framework and Gradle and Maven tools with the database MySQL and Postgres.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Worked on REST API's, Daemon and PUSH Notifications to manage and process data using Postgres SQL.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+\section{Projects}
+    \vspace{-13pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Blog Application Rest APIs} $|$ \emph{Java, SpringBoot, Hibernate, Maven, MySQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed to provide customers with a personalized easy-to-utilize user experience for writing and reading blogs and articles.}
+            \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+            \resumeItem{4 Modules: User, Post, Categories, and Comment.}
+          \resumeItemListEnd
+          
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Covid-19 Vaccination Rest APIs} $|$ \emph{Java, Spring, MySql}}{}
+          \resumeItemListStart
+            \resumeItem{Created backend application using Java and Spring to manage the vaccination process.}
+            \resumeItem{Processed user-inputted information in the back-end of the app to book a slot for vaccination.}
+            \resumeItem{Added user signup/signin for the user and admin, Admin can keep process regarding vaccine and user vaccination.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Bath and Body Works Clone} $|$ \emph{HTML, CSS, JavaScript}}{}
+          \resumeItemListStart
+            \resumeItem{Created a clone of an e-commerce website bath and body works. Implemented the signup/signin, product listing and user-friendly checkout. Used to sell bath, body and beauty related products}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+\section{Education}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    Full Stack Web Development Course, Masai School, Bengaluru Karnataka &\\
+    Bachelor of Science, Veer Bahadur Singh Purvanchal University, Uttar Pradesh & \\
+    Board of Higher Secondary Education, Uttar Pradesh 
+\end{tabular*}
+
+\section{Profiles/Certifications}
+\begin{flushleft}
+    \href{https://leetcode.com/prituyadav/}{\underline{Leetcode}} $|$ \href{https://www.hackerrank.com/profile/PrituYadav}{\underline{HackeRank}}
+    $|$ \href{https://www.codingninjas.com/studio/profile/203a6f29-ee48-4782-8068-f96eb79ee8e4}{\underline{CodingNinjas}} $|$
+{{Full Stack Java Development}} $|$ {{Problem Solving Certificate}}
+\end{flushleft}
+
+% \section{Certifications}
+% \begin{flushleft}
+%     \href{https://drive.google.com/file/d/1mc1pUvGCjKCPcwGKf4i58p2xRRfZXqoW/view?usp=sharing}{{Full Stack Web Development, Masai School}} $|$ \href{https://www.hackerrank.com/certificates/iframe/42f7e1543160}{{Problem Solving Certificate, HackerRank}} $|$ \href{https://www.hackerrank.com/certificates/iframe/8d06bd440dae}{{Java certificate, HackerRank}}
+% \end{flushleft}
+
+\end{document}
